@@ -1,0 +1,70 @@
+Last login: Wed Aug 24 16:01:16 on ttys001
+Jills-MacBook-Air:~ Jill$ cd Desktop
+Jills-MacBook-Air:Desktop Jill$ mkdir basic_repo
+Jills-MacBook-Air:Desktop Jill$ cd basic_repo
+Jills-MacBook-Air:basic_repo Jill$ echo "# basic_repo" >> README.md
+Jills-MacBook-Air:basic_repo Jill$ git init
+Initialized empty Git repository in /Users/Jill/Desktop/basic_repo/.git/
+Jills-MacBook-Air:basic_repo Jill$ git add README.md
+Jills-MacBook-Air:basic_repo Jill$ git commit -m "first commit"
+[master (root-commit) 496be8f] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+Jills-MacBook-Air:basic_repo Jill$ git remote add origin https://github.com/wildlingjill/basic_repo.git
+Jills-MacBook-Air:basic_repo Jill$ git push -u origin master
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 223 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/wildlingjill/basic_repo.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+Jills-MacBook-Air:basic_repo Jill$ touch index.html
+Jills-MacBook-Air:basic_repo Jill$ touch style.css
+Jills-MacBook-Air:basic_repo Jill$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	index.html
+	style.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+Jills-MacBook-Air:basic_repo Jill$ git add .
+Jills-MacBook-Air:basic_repo Jill$ git commit -m "Initial commit of html and css files"
+[master 0a162e7] Initial commit of html and css files
+ 2 files changed, 11 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 style.css
+Jills-MacBook-Air:basic_repo Jill$ git push origin master
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 454 bytes | 0 bytes/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/wildlingjill/basic_repo.git
+   496be8f..0a162e7  master -> master
+Jills-MacBook-Air:basic_repo Jill$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   index.html
+	modified:   style.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Jills-MacBook-Air:basic_repo Jill$ git add .
+Jills-MacBook-Air:basic_repo Jill$ git commit -m "Added more content to html and css files"
+[master 8e7606f] Added more content to html and css files
+ 2 files changed, 6 insertions(+)
+Jills-MacBook-Air:basic_repo Jill$ git push origin master
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 541 bytes | 0 bytes/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/wildlingjill/basic_repo.git
+   0a162e7..8e7606f  master -> master
+Jills-MacBook-Air:basic_repo Jill$ 
